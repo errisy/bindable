@@ -1,4 +1,4 @@
-# bindable
+# Bindable TS
 a typescript binding over decorator
 
 ## Why?
