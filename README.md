@@ -29,10 +29,17 @@ export class control extends frameworkElement {
 }
 ```
 
-The author has another project that he must finish by the end of Sep 2016, so the progress of this framework might be slowed down.
+The author has another project that he must finish by the end of Sep 2016, so the progress of this framework is suspended.
+
+
 
 Eventually, the bindable framework should offer a front-end UI style that is very similar to WPF.
 
+## How to get the example working on your computer?
+[bindable.ts](bindable/bindable/bindable.ts) relies on nothing. You can use this single file in anywhere.
+[ui.ts](bindable/bindable/ui.ts) contains canvas layout examples, so it requires EaselJS and AngularJS2. But [ui.ts](bindable/bindable/ui.ts) itself is a set of logic that mimics WPF. You can change the underlying view implementation to DOM elements and it should work for HTML.
+
+The exmaple contains on AngularJS2 and EaselJS. It also has a NodeJS server script in the [/bindable/bindable/server.sys.js](bindable/server.sys.js). You can start the server with [watch.cmd](bindable/watch.cmd). You can certainly use any other web servers, since the files in this project are purely front-end.
 
 ## where is the file?
 the bindable.ts is at [bindable\bindable.ts](bindable/bindable/bindable.ts)
