@@ -7,7 +7,7 @@ But with the power of typescript decorators, it is possible to set up object to 
 
 Binding is the basis of UI automation. This project was inspired by the concept of WPF(Windows Presentation Foundation).
 
-[bindable.ts](bindable/bindable/bindable.ts) is the basis for setting bindings, and [ui.ts](bindable/bindable/ui.ts) contains the ofs ("Object Framework Service"), which is designed for structured UI. Eventually, [ui.ts](bindable/bindable/ui.ts) will allows the description of UI template with typescript.
+[bindable.ts](bindable/bindable/bindable.ts) is the basis for setting bindings, in which the obs ("Object Binding Service") offers the access to most binding features; and [ui.ts](bindable/bindable/ui.ts) contains the ofs ("Object Framework Service"), which is designed for structured UI. Eventually, [ui.ts](bindable/bindable/ui.ts) will allows the description of UI template with typescript.
 
 Here is an example of a UI class with is view children defined by the embedded controlTemplate class. When the class control is built, the 'rect' and 'Text' are initiated and added to the 'viewChildren' ObservableArray.
 ```typescript
