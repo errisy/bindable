@@ -1,0 +1,1 @@
+node tsc2.js -p bindable -w

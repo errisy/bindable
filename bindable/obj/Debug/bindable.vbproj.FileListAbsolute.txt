@@ -1,0 +1,7 @@
+C:\HTTP\bindable\bindable\bin\Debug\ng2ts.exe.config
+C:\HTTP\bindable\bindable\obj\Debug\ng2ts.exe
+C:\HTTP\bindable\bindable\obj\Debug\ng2ts.xml
+C:\HTTP\bindable\bindable\obj\Debug\ng2ts.pdb
+C:\HTTP\bindable\bindable\obj\Debug\bindable.vbprojResolveAssemblyReference.cache
+C:\HTTP\bindable\bindable\obj\Debug\ng2ts.Resources.resources
+C:\HTTP\bindable\bindable\obj\Debug\bindable.vbproj.GenerateResource.Cache
