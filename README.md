@@ -5,7 +5,7 @@ a typescript binding over decorator
 Many javascript framework has the binding feature for HMTL templates, such AngularJS, KnockoutJS, etc.
 But with the power of typescript decorators, it is possible to set up object to object bindings with simple decorator codes.
 
-Binding is the basis of UI automation. This project was inspired by the concept of WPF(Windows Presentation Foundation).
+Bindings and Events are the basis of UI automation. This project was inspired by the concept of WPF(Windows Presentation Foundation).
 
 [bindable.ts](bindable/bindable/bindable.ts) is the basis for setting bindings, in which the obs ("Object Binding Service") offers the access to most binding features; and [ui.ts](bindable/bindable/ui.ts) contains the ofs ("Object Framework Service"), which is designed for structured UI. Eventually, [ui.ts](bindable/bindable/ui.ts) will allows the description of UI template with typescript.
 
@@ -28,6 +28,11 @@ export class control extends frameworkElement {
     public template: template;
 }
 ```
+
+## Weak Reference in Binding and Event with Path Change Detection.
+All the bindings and events are kept as 'weak reference' ITrigger. Once ITrigger.target is set to undefined, the ITrigger will be removed by the caller.
+
+When A.property binds to (or A.method listens to) A.branch.value, if A.branch is changed, the path change can be detected by either the binding host and listener. They will set the ITrigger.target of previous ITrigger to undefined to disable previous binding and listen and then set up new binding and listen to the newly assigned branch.
 
 The author has another project that he must finish by the end of Sep 2016, so the progress of this framework is suspended.
 
