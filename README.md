@@ -1,6 +1,11 @@
 # Bindable TS
 a typescript binding over decorator
 
+* This package has been upgraded as npm module errisy-bindable, use the following command to install errisy-bindable (updated in Fed 2017):
+```
+npm install errisy-bindable
+```
+
 ## Why?
 Many javascript framework has the binding feature for HMTL templates, such AngularJS, KnockoutJS, etc.
 But with the power of typescript decorators, it is possible to set up object to object bindings with simple decorator codes.
